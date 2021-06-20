@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace amardeepbazzar.Database
 {
-    public class ABContext : DbContext
+    public class ABContext : DbContext,IDisposable
     {
         public ABContext() : base("AmardeepBazzarConnection")
         {
